@@ -1,4 +1,4 @@
-import {Navbar, Text,useTheme,Link } from "@nextui-org/react";
+import {Link,Link,Navbar, Text,useTheme } from "@nextui-org/react";
 
 import  MyStyledButton  from "@/components/buttons/Button"
 
@@ -48,6 +48,21 @@ export default function NavbarItem() {
           <Navbar.Link href="#"> Trader Tool </Navbar.Link>
           <Navbar.Link href="#">Account Reporting</Navbar.Link>
         </Navbar.Content>
+        <Navbar.Collapse>
+        {collapseItems.map((item, index) => (
+          <Navbar.CollapseItem key={item}>
+            <Link
+              color="inherit"
+              css={{
+                minWidth: "100%",
+              }}
+              href="#"
+            >
+              {item}
+            </Link>
+          </Navbar.CollapseItem>
+        ))}
+      </Navbar.Collapse>
         <Navbar.Content
 
 
