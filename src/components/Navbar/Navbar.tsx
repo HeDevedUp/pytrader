@@ -1,4 +1,4 @@
-import {Link,Link,Navbar, Text,useTheme } from "@nextui-org/react";
+import {Link,Navbar, Text,useTheme } from "@nextui-org/react";
 
 import  MyStyledButton  from "@/components/buttons/Button"
 
