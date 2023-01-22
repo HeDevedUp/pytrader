@@ -1,4 +1,5 @@
 import { Head, Html, Main, NextScript } from 'next/document';
+import { CssBaseline } from "@nextui-org/react";
 
 export default function Document() {
   return (
@@ -11,6 +12,7 @@ export default function Document() {
           type='font/woff2'
           crossOrigin='anonymous'
         />
+        {CssBaseline.flush()}
       </Head>
       <body>
         <Main />
