@@ -19,7 +19,7 @@ export const navVariants = {
   },
 };
 
-export const slideIn = (direction: any, type, delay, duration) => ({
+export const slideIn = (direction: any, type: any, delay: any, duration: any) => ({
   hidden: {
     x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
     y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0,
