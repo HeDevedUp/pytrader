@@ -1,10 +1,10 @@
 import * as React from 'react';
 
+import TransationCard    from '@/components/Card/Card'
 import Hero from '@/components/hero/hero';
 import HeroText from '@/components/hero/heroText';
 import Layout from '@/components/layout/Layout';
 import Navbar from '@/components/Navbar/Navbar';
-
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -21,9 +21,10 @@ export default function HomePage() {
   return (
     <Layout>
       <Navbar/>
-      <div >
+      <div className=' mt-2' >
       <Hero/>
       <HeroText/>
+      <TransationCard/>
       </div>
 
 
