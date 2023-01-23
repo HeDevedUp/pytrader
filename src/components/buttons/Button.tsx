@@ -1,5 +1,6 @@
+'use client';
+
 import { Button,styled} from '@nextui-org/react';
-import * as React from 'react';
 
 
 
@@ -10,7 +11,7 @@ const MyStyledButton = styled(Button, {
       mysize: {
         height: '42px', // space[12]
         borderRadius: '$xs', // radii.xs
-        width:'191px',
+        width:'100px',
       }
     },
     color: {

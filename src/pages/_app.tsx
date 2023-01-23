@@ -1,8 +1,7 @@
+import { createTheme,NextUIProvider } from '@nextui-org/react'
 import { AppProps } from 'next/app';
-import { NextUIProvider,createTheme } from '@nextui-org/react'
-import { globalCss } from '@nextui-org/react';
 
-import '@/styles/globals.css';
+ import '@/styles/globals.css';
 
 /**
  * !STARTERCONF info
@@ -19,9 +18,7 @@ const theme = createTheme({
     },
   }
 })
-const globalStyles = globalCss({
-  background: { color: "#B89F1B"}
-});
+
 
 
 function MyApp({ Component, pageProps }: AppProps) {
