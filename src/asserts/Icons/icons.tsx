@@ -1,6 +1,6 @@
 import React from "react";
 
-const ChevronDownIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
+const ChevronDownIcon = ({ fill: any, size, width = 24, height = 24, ...props }) => {
   return (
     <svg
       fill="none"
@@ -22,7 +22,7 @@ const ChevronDownIcon = ({ fill:any, size, width = 24, height = 24, ...props }) 
   );
 };
 
-const TagUserIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
+const TagUserIcon = ({ fill: any, size, width = 24, height = 24, ...props }) => {
   return (
     <svg
       fill="none"
@@ -51,7 +51,7 @@ const TagUserIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
   );
 };
 
-const ServerIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
+const ServerIcon = ({ fill: any, size, width = 24, height = 24, ...props }) => {
   return (
     <svg
       fill="none"
@@ -72,7 +72,7 @@ const ServerIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
   );
 };
 
-const FlashIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
+const FlashIcon = ({ fill: any, size, width = 24, height = 24, ...props }) => {
   return (
     <svg
       fill="none"
@@ -94,7 +94,7 @@ const FlashIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
   );
 };
 
-const ActivityIcon = ({ fill:any size, width = 24, height = 24, ...props }) => {
+const ActivityIcon = ({ fill: any, size, width = 24, height = 24, ...props }) => {
   return (
     <svg
       data-name="Iconly/Curved/Activity"
@@ -120,7 +120,7 @@ const ActivityIcon = ({ fill:any size, width = 24, height = 24, ...props }) => {
   );
 };
 
-const ScaleIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
+const ScaleIcon = ({ fill: any, size, width = 24, height = 24, ...props }) => {
   return (
     <svg
       fill="none"
@@ -148,11 +148,11 @@ const ScaleIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
   );
 }
 
-const Trader = ({ fill:any, size, width = 55, height = 56, ...props }) =>{
+const Trader = ({ fill: any, size, width = 55, height = 56, ...props }) => {
   return (
     <svg
-    height={size || height}
-    width={size || width}
+      height={size || height}
+      width={size || width}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 55 56"
@@ -171,7 +171,7 @@ const Trader = ({ fill:any, size, width = 55, height = 56, ...props }) =>{
 }
 
 export const icons = {
-  trader: <Trader fill='currentColor' size={55}/>,
+  trader: <Trader fill='currentColor' size={55} />,
   chevron: <ChevronDownIcon fill="currentColor" size={18} />,
   scale: <ScaleIcon fill="var(--nextui-colors-warning)" size={30} />,
   activity: <ActivityIcon fill="var(--nextui-colors-secondary)" size={30} />,
