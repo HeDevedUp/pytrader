@@ -1,4 +1,7 @@
+'use client';
+
 import { Dropdown,Link, Navbar, Text, useTheme } from "@nextui-org/react";
+
 
 import MyStyledButton from "@/components/buttons/Button"
 

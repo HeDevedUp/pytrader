@@ -1,3 +1,5 @@
+'use client';
+
 import { Button,styled} from '@nextui-org/react';
 
 
