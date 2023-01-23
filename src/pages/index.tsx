@@ -4,17 +4,17 @@ import Navbar from '@/components/Navbar/Navbar';
 
 import { GetStarted, Hero, HeroText, TransationCard,WhatsNew } from '@/sections';
 
+
+
 export default function HomePage() {
   return (
-
-    <div className=''>
-
- <Navbar/>
- <div className='mt-2 '>
-
-      <Hero />
-      </div>
-
+    <div>
+      <Navbar/>
+      
+      <div className=' mt-2' >
+      <Hero/>
+       </div>
+      
       <div>
       <HeroText/>
         </div>
@@ -26,7 +26,11 @@ export default function HomePage() {
     <div>
     <GetStarted/>
     </div>
-    <div> <WhatsNew/></div>
+    
+    <div> 
+    <WhatsNew/>
+    </div>
+    
       </div>
   );
 }
