@@ -1,7 +1,7 @@
-import { createTheme,NextUIProvider } from '@nextui-org/react'
+import { createTheme, NextUIProvider } from '@nextui-org/react';
 import { AppProps } from 'next/app';
 
- import '@/styles/globals.css';
+import '@/styles/globals.css';
 
 /**
  * !STARTERCONF info
@@ -9,25 +9,22 @@ import { AppProps } from 'next/app';
  */
 
 const theme = createTheme({
-  type: "dark",
+  type: 'dark',
   theme: {
     colors: {
       primary: '#4ADE7B',
       secondary: '#F9CB80',
       error: '#B89F1B',
     },
-  }
-})
-
-
+  },
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
-
-  return(
+  return (
     <NextUIProvider theme={theme}>
-    <Component {...pageProps} />
+      <Component {...pageProps} />
     </NextUIProvider>
-  )
+  );
 }
 
 export default MyApp;

@@ -3,19 +3,15 @@ const nextConfig = {
   eslint: {
     dirs: ['src'],
   },
-experimental:{
-appDir:false,
-},
+  experimental: {
+    appDir: false,
+  },
   reactStrictMode: true,
   swcMinify: true,
 
   // Uncoment to add domain whitelist
   images: {
-    domains: [
-      'res.cloudinary.com',
-      'ibb.co',
-      'i.ibb.co',
-    ],
+    domains: ['res.cloudinary.com', 'ibb.co', 'i.ibb.co'],
   },
 
   // SVGR

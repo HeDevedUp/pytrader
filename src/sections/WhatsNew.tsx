@@ -2,31 +2,40 @@
 
 import { motion } from 'framer-motion';
 
-import styles from '@/styles';
+import {
+  MyStyledButton,
+  NewFeatures,
+  TitleText,
+  TypingText,
+} from '@/components';
+
 import { newFeatures } from '@/constant';
-import { NewFeatures, TitleText, TypingText } from '@/components';
-import { planetVariants, staggerContainer, fadeIn } from '@/utils/motion';
+import styles from '@/styles';
+import { fadeIn, planetVariants, staggerContainer } from '@/utils/motion';
 
 const WhatsNew = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
+      initial='hidden'
+      whileInView='show'
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+      className={`${styles.innerWidth} mx-auto flex flex-col gap-8 lg:flex-row`}
     >
       <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
-        className="flex-[0.95] flex justify-center flex-col"
+        className='flex flex-[0.95] flex-col justify-center'
       >
-        <TypingText title="| Whats new?" />
-        <TitleText title={<>What's new about PysyDTrader?</>} />
-        <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
+        <TypingText title='| Whats new?' />
+        <TitleText title={<>Auto trading journal for all your trades?</>} />
+        <div className='mt-[35px] flex flex-wrap justify-between gap-[24px]'>
           {newFeatures.map((feature) => (
-            <NewFeatures key={feature.title} {...feature} />
+            <NewFeatures key={feature} {...feature} />
           ))}
         </div>
+        <MyStyledButton className=' mt-3 bg-[#B89F1B]' auto size='mysize'>
+          Read More
+        </MyStyledButton>
       </motion.div>
 
       <motion.div
@@ -34,9 +43,9 @@ const WhatsNew = () => (
         className={`flex-1 ${styles.flexCenter}`}
       >
         <img
-          src="https://i.ibb.co/YfXHQFW/cryptocurrency-certificate-1.png"
-          alt="get-started"
-          className="w-[90%] h-[90%] object-contain"
+          src='https://i.ibb.co/YfXHQFW/cryptocurrency-certificate-1.png'
+          alt='get-started'
+          className='h-[90%] w-[90%] object-contain'
         />
       </motion.div>
     </motion.div>

@@ -1,53 +1,40 @@
 'use client';
 
-import { Dropdown,Link, Navbar, Text, useTheme } from "@nextui-org/react";
+import { Dropdown, Link, Navbar, Text, useTheme } from '@nextui-org/react';
 
+import MyStyledButton from '@/components/buttons/Button';
 
-import MyStyledButton from "@/components/buttons/Button"
+import { icons } from '@/asserts/Icons/icons';
 
-import { icons } from "@/asserts/Icons/icons";
-
-import { Layout } from "./Layout";
+import { Layout } from './Layout';
 
 export default function NavbarItem() {
-
   const { theme } = useTheme();
 
-  const collapseItems = [
-    "About Us",
-    "Products",
-    "FAQs",
-    "Sign In",
-    "Sign Out",
-  ];
+  const collapseItems = ['About Us', 'Products', 'FAQs', 'Sign In', 'Sign Out'];
 
   return (
     <Layout>
-      <Navbar isBordered variant="floating">
-        <Navbar.Toggle showIn="xs" />
+      <Navbar isBordered variant='floating'>
+        <Navbar.Toggle showIn='xs' />
         <Navbar.Brand
           css={{
-            "@xs": {
-              w: "12%",
+            '@xs': {
+              w: '12%',
             },
           }}
         >
-
-          <Text b color="inherit" hideIn="xs">
+          <Text b color='inherit' hideIn='xs'>
             PsyDTrader
           </Text>
         </Navbar.Brand>
         <Navbar.Content
           enableCursorHighlight
-          activeColor="warning"
-          hideIn="xs"
-          variant="highlight"
+          activeColor='warning'
+          hideIn='xs'
+          variant='highlight'
         >
-
-          <Navbar.Link  href="#">
-            About Us
-          </Navbar.Link>
-
+          <Navbar.Link href='#'>About Us</Navbar.Link>
 
           <Dropdown isBordered>
             <Navbar.Item>
@@ -56,9 +43,9 @@ export default function NavbarItem() {
                 light
                 css={{
                   px: 0,
-                  dflex: "center",
-                  svg: { pe: "none" },
-                  w:'0px'
+                  dflex: 'center',
+                  svg: { pe: 'none' },
+                  w: '0px',
                 }}
                 iconRight={icons.chevron}
                 ripple={false}
@@ -67,82 +54,80 @@ export default function NavbarItem() {
               </Dropdown.Button>
             </Navbar.Item>
             <Dropdown.Menu
-              aria-label="   PsyDTrader features"
+              aria-label='   PsyDTrader features'
               css={{
-                $$dropdownMenuWidth: "340px",
-                $$dropdownItemHeight: "70px",
-                "& .nextui-dropdown-item": {
-                  py: "$4",
+                $$dropdownMenuWidth: '340px',
+                $$dropdownItemHeight: '70px',
+                '& .nextui-dropdown-item': {
+                  py: '$4',
                   // dropdown item left icon
                   svg: {
-                    color: "$secondary",
-                    mr: "$4",
+                    color: '$secondary',
+                    mr: '$4',
                   },
                   // dropdown item title
-                  "& .nextui-dropdown-item-content": {
-                    w: "100%",
-                    fontWeight: "$semibold",
+                  '& .nextui-dropdown-item-content': {
+                    w: '100%',
+                    fontWeight: '$semibold',
                   },
                 },
               }}
             >
               <Dropdown.Item
-                key="autoscaling"
+                key='autoscaling'
                 showFullDescription
-                description="   PsyDTrader scales apps to meet user demand, automagically, based on load."
+                description='   PsyDTrader scales apps to meet user demand, automagically, based on load.'
                 icon={icons.scale}
               >
                 Trading Jornal
               </Dropdown.Item>
               <Dropdown.Item
-                key="usage_metrics"
+                key='usage_metrics'
                 showFullDescription
-                description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+                description='Real-time metrics to debug issues. Slow query added? We’ll show you exactly where.'
                 icon={icons.activity}
               >
                 Price Alert
               </Dropdown.Item>
               <Dropdown.Item
-                key="production_ready"
+                key='production_ready'
                 showFullDescription
-                description="   PsyDTrader runs on ACME, join us and others serving requests at web scale."
+                description='   PsyDTrader runs on ACME, join us and others serving requests at web scale.'
                 icon={icons.flash}
               >
                 Traders Tool
               </Dropdown.Item>
               <Dropdown.Item
-                key="99_uptime"
+                key='99_uptime'
                 showFullDescription
-                description="Applications stay on the grid with high availability and high uptime guarantees."
+                description='Applications stay on the grid with high availability and high uptime guarantees.'
                 icon={icons.server}
               >
                 +99% Uptime
               </Dropdown.Item>
               <Dropdown.Item
-                key="supreme_support"
+                key='supreme_support'
                 showFullDescription
-                description="Overcome any challenge with a supporting team ready to respond."
+                description='Overcome any challenge with a supporting team ready to respond.'
                 icon={icons.user}
               >
                 +Account Reporting
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
-          <Navbar.Link href="#">Pricing</Navbar.Link>
-          <Navbar.Link href="#"> FAQs </Navbar.Link>
+          <Navbar.Link href='#'>Pricing</Navbar.Link>
+          <Navbar.Link href='#'> FAQs </Navbar.Link>
         </Navbar.Content>
-
-
 
         <Navbar.Collapse>
           {collapseItems.map((item, index) => (
             <Navbar.CollapseItem key={item}>
               <Link
-                color="inherit"
+                color='inherit'
                 css={{
-                  minWidth: "100%",
+                  minWidth: '100%',
                 }}
-                href="#"
+                href='#'
               >
                 {item}
               </Link>
@@ -150,43 +135,26 @@ export default function NavbarItem() {
           ))}
         </Navbar.Collapse>
         <Navbar.Content
-
-
           css={{
-            "@xs": {
-              w: "12%",
-              jc: "flex-end",
+            '@xs': {
+              w: '12%',
+              jc: 'flex-end',
             },
           }}
         >
-
-
-
           <Navbar.Item>
-            <MyStyledButton
-              className=' bg-[#B89F1B]'
-              auto
-              size="mysize"
-            >
+            <MyStyledButton className=' bg-[#B89F1B]' auto size='mysize'>
               Sign In
             </MyStyledButton>
           </Navbar.Item>
 
-
           <Navbar.Item>
-            <MyStyledButton
-              className=' bg-[#B89F1B]'
-              auto
-              size="mysize"
-            >
+            <MyStyledButton className=' bg-[#B89F1B]' auto size='mysize'>
               Sign Up
             </MyStyledButton>
           </Navbar.Item>
         </Navbar.Content>
-
       </Navbar>
-
-    </Layout >
-
+    </Layout>
   );
 }
