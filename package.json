@@ -9,7 +9,7 @@
     "lint": "next lint",
     "lint:fix": "eslint src --fix && yarn format",
     "lint:strict": "eslint --max-warnings=0 src",
-    "typecheck": "tsc --noEmit --incremental false",
+    "t": "tsc --noEmit --incremental false",
     "test:watch": "jest --watch",
     "test": "jest",
     "format": "prettier -w .",
