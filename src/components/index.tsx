@@ -1,8 +1,6 @@
-import { TitleText,TypingText } from '@/components/CustomText'
-import StartSteps from '@/components/StartSteps'
-import MyStyledButton from "@/components/buttons/Button"
-import NewFeatures from '@/components/NewFeatures'
+import MyStyledButton from '@/components/buttons/Button';
+import { TitleText, TypingText } from '@/components/CustomText';
+import NewFeatures from '@/components/NewFeatures';
+import StartSteps from '@/components/StartSteps';
 
-export {
-  StartSteps,TitleText,MyStyledButton,NewFeatures,
-  TypingText}
+export { MyStyledButton, NewFeatures, StartSteps, TitleText, TypingText };

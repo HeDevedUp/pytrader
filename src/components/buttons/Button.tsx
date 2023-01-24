@@ -1,8 +1,6 @@
 'use client';
 
-import { Button,styled} from '@nextui-org/react';
-
-
+import { Button, styled } from '@nextui-org/react';
 
 const MyStyledButton = styled(Button, {
   boxShadow: '$md', // shadows.md
@@ -11,15 +9,15 @@ const MyStyledButton = styled(Button, {
       mysize: {
         height: '42px', // space[12]
         borderRadius: '$xs', // radii.xs
-        width:'100px',
-      }
+        width: '100px',
+      },
     },
     color: {
       mycolor: {
         color: 'white',
         '&:hover': {
           background: '$yellow500',
-          color:'white',
+          color: 'white',
         },
         '&:active': {
           background: '$yellow700',
@@ -27,9 +25,9 @@ const MyStyledButton = styled(Button, {
         '&:focus': {
           borderColor: '$yellow700',
         },
-      }
-    }
-  }
+      },
+    },
+  },
 });
 
- export default MyStyledButton
+export default MyStyledButton;

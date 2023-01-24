@@ -15,10 +15,10 @@ const styles = {
 
   // hero section
   heroHeading:
-      'font-bold lg:text-[56px] md:text-[56px] sm:text-[56px] text-[18px] lg:leading-[71px] md:leading-[114.4px] sm:leading-[74.4px] leading-[42.4px] uppercase text-[#ECECEC]',
+    'font-bold lg:text-[56px] md:text-[56px] sm:text-[56px] text-[18px] lg:leading-[71px] md:leading-[114.4px] sm:leading-[74.4px] leading-[42.4px] uppercase text-[#ECECEC]',
   heroDText:
-  'sm:text-[48px] text-[31px] font-medium	 sm:leading-1 leading-0  sm:w-[590px] w-[400px]  sm:mx-2 mx-[6px]'
-    //   'md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
+    'sm:text-[48px] text-[31px] font-medium	 sm:leading-1 leading-0  sm:w-[590px] w-[400px]  sm:mx-2 mx-[6px]',
+  //   'md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]',
 };
 
 export default styles;
