@@ -17,8 +17,10 @@ module.exports = {
     'no-console': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/no-unescaped-entities': 'off',
-
+    "@typescript-eslint/ban-ts-ignore": "off",
     'react/display-name': 'off',
+    "@typescript-eslint/ban-ts-comment": "off",
+
     'react/jsx-curly-brace-presence': [
       'warn',
       { props: 'never', children: 'never' },
