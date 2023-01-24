@@ -1,6 +1,18 @@
 import React from 'react';
+interface LayoutProps {
+  fill?: string;
+  width?: number;
+  height?: number;
+  size?: number;
+}
 
-const ChevronDownIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
+const ChevronDownIcon: React.FC<LayoutProps> = ({
+  fill,
+  size,
+  width = 24,
+  height = 24,
+  ...props
+}) => {
   return (
     <svg
       fill='none'
@@ -22,8 +34,8 @@ const ChevronDownIcon = ({ fill:any, size, width = 24, height = 24, ...props }) 
   );
 };
 
-const TagUserIcon = ({
-  fill: any,
+const TagUserIcon: React.FC<LayoutProps> = ({
+  fill,
   size,
   width = 24,
   height = 24,
@@ -57,7 +69,13 @@ const TagUserIcon = ({
   );
 };
 
-const ServerIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
+const ServerIcon: React.FC<LayoutProps> = ({
+  fill,
+  size,
+  width = 24,
+  height = 24,
+  ...props
+}) => {
   return (
     <svg
       fill='none'
@@ -78,7 +96,13 @@ const ServerIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
   );
 };
 
-const FlashIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
+const FlashIcon: React.FC<LayoutProps> = ({
+  fill,
+  size,
+  width = 24,
+  height = 24,
+  ...props
+}) => {
   return (
     <svg
       fill='none'
@@ -100,8 +124,8 @@ const FlashIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
   );
 };
 
-const ActivityIcon = ({
-  fill: any,
+const ActivityIcon: React.FC<LayoutProps> = ({
+  fill,
   size,
   width = 24,
   height = 24,
@@ -132,7 +156,13 @@ const ActivityIcon = ({
   );
 };
 
-const ScaleIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
+const ScaleIcon: React.FC<LayoutProps> = ({
+  fill,
+  size,
+  width = 24,
+  height = 24,
+  ...props
+}) => {
   return (
     <svg
       fill='none'
@@ -160,7 +190,13 @@ const ScaleIcon = ({ fill:any, size, width = 24, height = 24, ...props }) => {
   );
 };
 
-const Trader = ({ fill:any, size, width = 55, height = 56, ...props }) => {
+const Trader: React.FC<LayoutProps> = ({
+  fill,
+  size,
+  width = 55,
+  height = 56,
+  ...props
+}) => {
   return (
     <svg
       height={size || height}

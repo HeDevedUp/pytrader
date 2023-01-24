@@ -32,11 +32,9 @@ export const startingFeatures = [
 
 export const newFeatures = [
   {
-   
     subtitle:
       'Talks about how the system we have created would automatically record every trade you take and automatically create a journal for you when you place trades through our app.',
   },
-
 ];
 
 export const insights = [
